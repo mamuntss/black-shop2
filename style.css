@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --white: #fff;
+    --darkgray: #333;
+    --gold: #C59343;
+    --lightgray: rgba(0, 0, 0, .1);
+    --gray: rgba(0, 0, 0, .7);
+    --yellow:  #F0E68C;
+    --black: black;
+}
+
+* {
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    transition: all .3s linear;
+}
+
+*::selection {
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+section {
+    margin: 0 1rem;
+}
+
+.heading {
+    text-align: center;
+    padding: 9rem 1rem 1rem 1rem;
+    color: var(--white);
+    font-size: 3.5rem;
+    text-shadow: 0 .3rem .2rem var(--lightgray);
+}
+
+
+.btn {
+    padding: .7rem 2.5rem;
+    background-color: var(--black);
+    color: var(--yellow);
+    border: .1rem solid var(--darkgray);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem var(--lightgray);
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    background-color: var(--darkgray);
+    color: var(--black);
+}
+
+/* header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    position: fixed;
+    background-color: var(--black);
+    z-index: 1000;
+    top: 0; left: 0;
+    box-shadow: .5rem .5rem .5rem var(--lightgray);
+}
+
+header .logo {
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+header .logo i {
+    color: var(--yellow);
+}
+
+header .navbar a {
+    font-size: 2rem;
+    color: var(--white);
+    padding: 0 1rem;
+}
+
+header .navbar a:hover {
+    color: var(--yellow);
+}
+
+.icons i{
+    font-size: 2.5rem;
+    color: var(--yellow);
+    padding: 0 .7rem;
+}
+
+.icons i:hover {
+    color: var(--darkgray);
+}
+
+
+/* home */
+.home {
+    background: url(./picture/6CB008CD-F1A1-42F1-8774-07B6951D547B.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 75vh;
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.home .content h3 {
+    color: var(--white);
+    font-size: 6rem;
+    font-weight: 500;
+    left: 5rem;
+    position: absolute;
+    bottom: 25rem;
+    background-color: var(--black);
+    padding: 1rem;
+}
+
+.home .content .btn {
+    position: absolute;
+    bottom: 18.5rem;
+    left: 18.5rem;
+    font-size: 3rem;
+}
+
+/* clothes */
+.clothes .box-container,
+.bags .box-container,
+.shoes .box-container,
+.jewellery .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.clothes .box-container .box, 
+.bags .box-container .box,
+.shoes .box-container .box,
+.jewellery .box-container .box{
+    width: 22%;
+    margin-top: 1rem;
+}
+
+.clothes .box-container .box .image,
+.bags .box-container .box .image,
+.shoes .box-container .box .image,
+.jewellery .box-container .box .image{
+    width: 100%;
+    height: 55vh;
+    margin-bottom: 1rem;
+}
+
+.clothes .box-container .box .image img,
+.bags .box-container .box .image img,
+.shoes .box-container .box .image img,
+.jewellery .box-container .box .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.clothes .box-container .box .content span,
+.bags .box-container .box .content span,
+.shoes .box-container .box .content span,
+.jewellery .box-container .box .content span{
+    color: var(--white);
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.clothes .box-container .box .content .price,
+.bags .box-container .box .content .price,
+.shoes .box-container .box .content .price,
+.jewellery .box-container .box .content .price{
+    font-size: 1.5rem;
+    margin-left: .5rem;
+    color: var(--yellow);
+    padding: 0.5rem;
+}
+
+.clothes .box-container .box .content .btn,
+.bags .box-container .box .content .btn,
+.shoes .box-container .box .content .btn,
+.jewellery .box-container .box .content .btn{
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+/* bags */
+.bags .box-container .box .image,
+.shoes .box-container .box .image,
+.jewellery .box-container .box .image{
+    height: 45vh;
+}
+
+
+
+/* contact */
+.contact {
+    background: url(./images/contact-bck.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 7rem;
+    margin-top: 10rem;
+}
+
+.contact .heading i {
+    color: var(--white);
+}
+
+.contact form {
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.contact form .inputBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact form .inputBox input,
+.contact form textarea {
+    width: 49%;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    color: var(--white);
+}
+
+.contact form textarea {
+    width: 100%;
+    height: 22rem;
+    resize: none;
+}
+
+.contact form .btn {
+    font-size: 2rem;
+}
+
+.contact form .btn:hover {
+    background-color: var(--white);
+    color: var(--darkgray);
+}
+
+/* footer */
+footer .share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+footer .share .button {
+    margin: 2rem;
+    background-color: var(--yellow);
+    color: var(--black);
+    font-size: 3rem;
+    padding: 1rem 1.4rem;
+    border-radius: 50%;
+    border: .1rem solid none;
+}
+
+footer .share .button:hover {
+    border-color: var(--darkgray);
+    color: var(--gold);
+    background-color: var(--white);
+}
+
+footer .credit {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--darkgray);
+    margin: 2rem 0;
+}
+
+footer .credit span {
+    color: var(--yellow);
+}
+
